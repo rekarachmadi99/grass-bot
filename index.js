@@ -59,7 +59,7 @@ async function main() {
 function startHourlyProcess() {
   async function restartProcess() {
     await main().catch(console.error);
-    console.log("\nProcess finished. Restarting in 1 hour...\n".yellow);
+    console.log("\nProcess finished. Restarting in 24 hour...\n".yellow);
 
     setTimeout(() => {
       restartProcess();
